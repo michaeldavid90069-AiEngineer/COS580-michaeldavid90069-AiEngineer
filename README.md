@@ -76,6 +76,7 @@ Core Libraries: Pandas, NumPy, Scikit-Learn, SciPy, Matplotlib, Seaborn, Yellowb
 Version Control: Git (Conventional Commits)
 
 Project Roadmap
+
 [x] Week 1: Data Preparation, Hypothesis Testing, Feature Engineering, K-Means & Hierarchical Clustering
 
 [x] Week 2: Supervised Learning Pipelines & Model Evaluation: Built Scikit-Learn/Statsmodels Logistic Regression, Gaussian Naive Bayes, KDTree KNN models, and class-imbalance resampling pipelines on the maintenance dataset.
