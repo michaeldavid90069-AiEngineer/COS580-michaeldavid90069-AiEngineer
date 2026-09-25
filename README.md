@@ -54,9 +54,9 @@ For outlier cleaning, I looked at the bitrate (bits per second). In real media p
 *   **Industry Context:** Incorporated the 2026 MDS-VQA research citation to ground the statistical findings in real-world AI video engineering frameworks.
 
 ---
-Week 4: Final Round of Supervised Learning Models & Peer Review
-Discussion File: MichaelDavid_ResponceTo_OnyekachiOnyenokwe_Discussion4.ipynb | Data Source: flight_prices.csv
-Assignment File: MichaelDavid_Assignment_Final_Round_of_Supervised_Learning_Models.ipynb | Data Sources: maintenance.csv, cars.csv
+### Week 4: Final Round of Supervised Learning Models & Peer Review**
+**Discussion File:** MichaelDavid_ResponceTo_OnyekachiOnyenokwe_Discussion4.ipynb | **Data Source:** flight_prices.csv
+**Assignment File:** MichaelDavid_Assignment_Final_Round_of_Supervised_Learning_Models.ipynb | **Data Sources:** maintenance.csv, cars.csv
 
 Decision Tree Classification: Implemented stratified train-test splits to predict binary machine failure. Configured dual DecisionTreeClassifier models (varying maximum depth, splitting criterion, and max features), utilizing Cohen's Kappa over raw accuracy to heavily penalize random chance guessing on the imbalanced dataset. Customized plot_tree outputs with dynamic F-string titles and localized node labeling.
 
@@ -84,4 +84,4 @@ SVM Kernel Variations: Benchmarked LinearSVR, a standard SVR (linear kernel), an
 [x] Week 4: Final Supervised Learning Models & SVM Implementation - Engineered Decision Tree Classification/Regression models, optimized Random Forest ensembles via Grid Search, customized Yellowbrick feature importance visualizations, and mapped non-linear correlations via polynomial kernel Support Vector Regressors.
 
 
-Michael David
+*Michael David*
