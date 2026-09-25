@@ -54,6 +54,19 @@ For outlier cleaning, I looked at the bitrate (bits per second). In real media p
 *   **Industry Context:** Incorporated the 2026 MDS-VQA research citation to ground the statistical findings in real-world AI video engineering frameworks.
 
 ---
+Week 4: Final Round of Supervised Learning Models & Peer Review
+Discussion File: MichaelDavid_ResponceTo_OnyekachiOnyenokwe_Discussion4.ipynb | Data Source: flight_prices.csv
+Assignment File: MichaelDavid_Assignment_Final_Round_of_Supervised_Learning_Models.ipynb | Data Sources: maintenance.csv, cars.csv
+
+Decision Tree Classification: Implemented stratified train-test splits to predict binary machine failure. Configured dual DecisionTreeClassifier models (varying maximum depth, splitting criterion, and max features), utilizing Cohen's Kappa over raw accuracy to heavily penalize random chance guessing on the imbalanced dataset. Customized plot_tree outputs with dynamic F-string titles and localized node labeling.
+
+Ensemble Optimization (Random Forest): Built a hyperparameter grid spanning estimator limits (50, 100, 200), purity criterions (Gini, Entropy), and depths. Executed a GridSearchCV evaluated via a weighted F1 scoring metric to optimize the Random Forest architecture against the maintenance dataset.
+
+Decision Tree Regression: Configured a DecisionTreeRegressor (utilizing absolute error and Friedman MSE) on the cars dataset. Generated Yellowbrick FeatureImportances bar charts (enforcing custom brand colors) using topn=-5 to isolate and evaluate the bottom five least important parameters (identifying transmission as the least impactful node split).
+
+Support Vector Regression (SVR) & Hyperplanes: As part of a collaborative peer review, standardized feature data using StandardScaler to ensure physical distance integrity before passing to an SVR algorithm. Tuned regularization (C), defined no-penalty "epsilon tube" boundaries, and styled the AIC/MSE outputs via a zebra-striped Pandas DataFrame.
+
+SVM Kernel Variations: Benchmarked LinearSVR, a standard SVR (linear kernel), and a NuSVR (polynomial kernel degree 2) against the vehicle price dataset. Proved via MSE and calculated BIC tracking that polynomial hyperplanes vastly outperformed linear boundaries by successfully mapping the dataset's underlying non-linear correlations.
 
 ## Technical Stack
 *   **Language:** Python 3.10+
@@ -62,10 +75,13 @@ For outlier cleaning, I looked at the bitrate (bits per second). In real media p
 *   **Version Control:** Git (Conventional Commits)
 
 ## Project Roadmap
-- [x] **Week 1: Data Preparation & Unsupervised Clustering** - Hypothesis Testing, Feature Engineering, K-Means & Hierarchical Clustering.
-- [x] **Week 2: Supervised Learning Pipelines & Model Evaluation** - Built Scikit-Learn/Statsmodels Logistic Regression, Gaussian Naive Bayes, KDTree KNN models, and class-imbalance resampling pipelines on the `maintenance` dataset.
-- [x] **Week 3: Advanced Regression & Optimization** - Configured OLS/Linear Regression and KNN models, performed Grid/Random Search tuning, plotted Yellowbrick learning curves, and executed RFECV/SFS feature selection on `flight_prices` and `cars` datasets.
-- [ ] **Week 4: Neural Architectures & End-to-End Pipeline Integration**
+[x] Week 1: Data Preparation & Unsupervised Clustering - Hypothesis Testing, Feature Engineering, K-Means & Hierarchical Clustering.
+
+[x] Week 2: Supervised Learning Pipelines & Model Evaluation - Built Scikit-Learn/Statsmodels Logistic Regression, Gaussian Naive Bayes, KDTree KNN models, and class-imbalance resampling pipelines on the maintenance dataset.
+
+[x] Week 3: Advanced Regression & Optimization - Configured OLS/Linear Regression and KNN models, performed Grid/Random Search tuning, plotted Yellowbrick learning curves, and executed RFECV/SFS feature selection on flight_prices and cars datasets.
+
+[x] Week 4: Final Supervised Learning Models & SVM Implementation - Engineered Decision Tree Classification/Regression models, optimized Random Forest ensembles via Grid Search, customized Yellowbrick feature importance visualizations, and mapped non-linear correlations via polynomial kernel Support Vector Regressors.
 
 
 Michael David
